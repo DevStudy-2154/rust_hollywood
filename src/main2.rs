@@ -52,7 +52,7 @@ fn main(){
 		// 文字を縦に流す
 		message3_y = message3_y + 1 as u16;
 		if message3_y >= height as u16{
-			message3_x = rng.gen_range(0, width);
+			message3_x = rng.gen_range(15, width);
 			message3_y = 0 as u16;
 		}
 
@@ -81,6 +81,6 @@ fn main(){
 	)	.unwrap();
 
 		stdout.flush().unwrap();
-		thread::sleep(time::Duration::from_millis(100));
+		thread::sleep(time::Duration::from_millis(50));
 	}
 }
